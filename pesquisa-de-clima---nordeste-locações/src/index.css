@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --color-nit-red: #C00000;
+  --color-nit-red-dark: #8B0000;
+  --color-nit-gray-light: #F5F5F5;
+  --color-nit-gray-medium: #E0E0E0;
+  --color-nit-gray-dark: #333333;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--color-nit-gray-light);
+  color: var(--color-nit-gray-dark);
+  font-family: var(--font-sans);
+}
+
+.nit-card {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  padding: 1.5rem;
+}
+
+.nit-button-primary {
+  background-color: var(--color-nit-red);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.nit-button-primary:hover {
+  background-color: var(--color-nit-red-dark);
+}
+
+.nit-button-secondary {
+  background-color: var(--color-nit-gray-medium);
+  color: var(--color-nit-gray-dark);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.nit-button-secondary:hover {
+  background-color: #d0d0d0;
+}
